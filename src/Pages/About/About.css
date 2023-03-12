@@ -1,0 +1,42 @@
+:is(.about-intro, .about-outro) {
+    margin: 16px 0;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.about strong {
+    letter-spacing: 0.7px;
+    font-size: 0.9rem;
+}
+
+.about-links-wrapper {
+    margin-top: 210px;
+    margin-left: 10px;
+}
+
+.about a {
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-bottom: 35px;
+    display: inline-block;
+    transform: rotate(-41deg);
+    transform-origin: left center;
+    position: relative;
+    transition: 300ms ease;
+}
+
+.about a::before {
+    content: "";
+    top: 50%;
+    right: -35px;
+    background-color: var(--white);
+    width: 18px;
+    height: 1px;
+    position: absolute;
+    transition: 300ms ease;
+}
+
+.about a:is(:hover, :focus)::before {
+    right: -48px;
+}

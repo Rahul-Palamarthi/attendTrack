@@ -1,0 +1,97 @@
+.each-subject {
+    padding: 6px 0 0;
+    margin: 0 0 6px;
+}
+
+.each-subject-chart {
+    width: 200px;
+    aspect-ratio: 1;
+    margin: 12px auto;
+    position: relative;
+}
+
+.each-subject-chart::before {
+    content: attr(data-percentage);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+:is(.each-subject-prsent, .each-subject-absent) {
+    width: 20px;
+    aspect-ratio: 1;
+    position: relative;
+    border-radius: 100px;
+    margin: 8px 0;
+}
+
+:is(.each-subject-prsent, .each-subject-absent)::before {
+    content: attr(data-info);
+    position: absolute;
+    left: calc(100% + 12px);
+    font-family: var(--nunito);
+    font-weight: 600;
+    top: 0px;
+}
+
+.each-subject-absent {
+    margin: 6px 0 12px 0;
+}
+
+.classes-wrapper div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.classes-wrapper p {
+    text-transform: capitalize;
+    letter-spacing: 0.7;
+    font-weight: 600;
+}
+
+.each-subject-wrapper button {
+    position: relative;
+    isolation: isolate;
+    color: var(--grey);
+    border: none;
+}
+
+.classes-wrapper button {
+    width: 100%;
+    font-family: var(--nunito);
+    font-weight: 700;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 1px;
+    margin: 3px 0 12px 0;
+}
+
+.each-subject-wrapper button::before {
+    content: "";
+    position: absolute;
+    inset: 1px 1px 1px 1px;
+    background-color: var(--black-150);
+    z-index: -1;
+}
+
+:is(.status-wrapper, .outro) button {
+    background-color: var(--white);
+    border-radius: 1px;
+    width: 100%;
+    padding: 12px 0;
+    margin: 12px 0 0 0;
+    font-family: var(--nunito);
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    font-size: 0.85rem;
+}
+
+.classes-wrapper ~ hr {
+    border: 1px solid var(--black);
+    margin: 6px 0;
+}

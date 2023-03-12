@@ -1,0 +1,76 @@
+.all-subjects-card {
+    border-radius: 0px;
+    margin: 10px 0;
+    padding: 1em 1em;
+    position: relative;
+    isolation: isolate;
+    background-image: linear-gradient(
+        to bottom right,
+        var(--violet),
+        var(--black-150)
+    );
+}
+
+.all-subjects-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 2px 2px 2px 2px;
+    background-color: var(--black-150);
+}
+
+.all-subjects-card-attendence {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 6px 0;
+}
+
+.all-subjects-card-attendence span {
+    letter-spacing: 0.7px;
+    font-size: 0.9rem;
+}
+
+.all-subject-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 65px;
+}
+
+.all-subject-percentage span {
+    font-size: 1.2rem;
+}
+
+.all-subjects-show-subjects {
+    margin: 18px 0 0;
+}
+
+.all-subjects-chart-wrapper {
+    width: 200px;
+    aspect-ratio: 1;
+}
+
+.all-subjects-subject-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.all-subjects-color {
+    position: relative;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+}
+
+.all-subjects-subject {
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    position: relative;
+    top: 1px;
+}

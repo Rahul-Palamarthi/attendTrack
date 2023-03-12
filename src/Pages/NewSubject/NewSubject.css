@@ -1,0 +1,106 @@
+.create-subject-wrapper {
+    background-color: var(--black);
+    padding: 1em 0;
+}
+
+.create-subject-wrapper :is(input, button) {
+    display: block;
+    width: 100%;
+    padding: 1.35em 1.45em;
+    letter-spacing: 0.7px;
+    border-radius: 1px;
+    font-size: 0.85rem;
+    font-family: var(--nunito);
+    transition: 300ms ease;
+    font-weight: 600;
+}
+
+.create-subject-wrapper p {
+    position: relative;
+    padding: 2px 2px;
+    margin: 8px 0;
+    background-image: linear-gradient(
+        to bottom right,
+        var(--violet),
+        var(--black-150)
+    );
+}
+
+.create-subject-wrapper :is(button)::before {
+    content: "";
+    position: absolute;
+    inset: 2px 2px 2px 2px;
+    z-index: -1;
+    background-color: var(--black-150);
+}
+
+.create-subject-wrapper input {
+    color: var(--white);
+    outline: none;
+    border: none;
+    background-color: var(--black-150);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.create-subject-wrapper input::placeholder {
+    color: var(--white);
+    opacity: 1;
+    transition: 300ms ease;
+}
+
+.create-subject-wrapper input:is(:hover, :focus) {
+    outline: none;
+    cursor: pointer;
+}
+
+.create-subject-wrapper input:is(:hover, :focus)::placeholder {
+    opacity: 0;
+}
+
+.create-subject-wrapper button {
+    color: var(--white);
+    background-color: var(--white);
+    font-weight: 700;
+    border: none;
+    position: relative;
+    margin: 8px 0;
+    isolation: isolate;
+    background-image: linear-gradient(
+        to bottom right,
+        var(--violet),
+        var(--black-150)
+    );
+}
+
+.create-subject-wrapper button:is(:hover, :focus) {
+    filter: brightness(1.1);
+    outline: none;
+}
+
+.create-subject-wrapper hr {
+    background-image: linear-gradient(
+        to bottom right,
+        var(--violet),
+        var(--black-150)
+    );
+    height: 3px;
+    border: none;
+    margin: 16px 0;
+    outline: none;
+}
+
+.create-subject-wrapper .close-btn {
+    color: var(--white);
+}

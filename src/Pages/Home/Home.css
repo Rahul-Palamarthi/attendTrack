@@ -1,0 +1,33 @@
+.home-wrapper {
+    position: relative;
+    padding: 0 0 30px;
+}
+
+.new-btn {
+    background-color: var(--violet);
+    padding: 0.6em 1em;
+    border-radius: 0px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: 300ms ease;
+    font-family: var(--nunito);
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    border: 2px solid var(--black);
+}
+
+.new-btn:is(:hover, :focus) {
+    outline: none;
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+.new-btn svg {
+    margin: 0 5px 0 0;
+}

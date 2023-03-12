@@ -19,7 +19,9 @@ const AllSubjectsCard = ({ subjects }) => {
             {
                 data: [
                     ...subjects.map((val) => val.attendedClasses),
-                    totalClassesVal - attendedClassesVal,
+                    totalClassesVal === 0
+                        ? 2
+                        : totalClassesVal - attendedClassesVal,
                 ],
                 backgroundColor: [
                     ...subjects.map((val) => colors[(val.id - 1) % 14]),

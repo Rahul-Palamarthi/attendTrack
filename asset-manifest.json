@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/attendtrack/static/css/main.03a018c7.css",
+    "main.js": "/attendtrack/static/js/main.6461775a.js",
+    "index.html": "/attendtrack/index.html",
+    "static/media/New.svg": "/attendtrack/static/media/New.234c6da36c6adcee752333ff51842596.svg",
+    "main.03a018c7.css.map": "/attendtrack/static/css/main.03a018c7.css.map",
+    "main.6461775a.js.map": "/attendtrack/static/js/main.6461775a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03a018c7.css",
+    "static/js/main.6461775a.js"
+  ]
+}

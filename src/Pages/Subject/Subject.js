@@ -50,7 +50,7 @@ const Subject = () => {
                 totalClasses: val.totalClasses,
             }));
         setLocalData("subjects", val);
-        navigate("/");
+        navigate("/attendTrack");
     }
 
     function handleAttendedClassesIncrement() {
@@ -284,7 +284,7 @@ const Subject = () => {
                                 </button>
                             </div>
                             <div className="outro">
-                                <Link to="/">
+                                <Link to="/attendTrack">
                                     <button
                                         className="border"
                                         style={{

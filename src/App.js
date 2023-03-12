@@ -12,12 +12,18 @@ function App() {
             <BrowserRouter>
                 <Header />
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/subject">
-                        <Route path="/subject/new" element={<NewSubject />} />
-                        <Route path={`/subject/:id`} element={<Subject />} />
+                    <Route path="/attendTrack" element={<Home />} />
+                    <Route path="/attendTrack/subject">
+                        <Route
+                            path="/attendTrack/subject/new"
+                            element={<NewSubject />}
+                        />
+                        <Route
+                            path={`/attendTrack/subject/:id`}
+                            element={<Subject />}
+                        />
                     </Route>
-                    <Route path="/about" element={<About />} />
+                    <Route path="/attendTrack/about" element={<About />} />
                 </Routes>
             </BrowserRouter>
         </>

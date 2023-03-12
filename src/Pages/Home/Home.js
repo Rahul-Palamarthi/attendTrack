@@ -52,7 +52,7 @@ const Home = () => {
         <>
             <section className="home">
                 <div className="home-wrapper">
-                    <Link to={"/subject/new"}>
+                    <Link to={"/attendTrack/subject/new"}>
                         <button className="new-btn border">
                             <New /> <p className="offset-1">New Subject</p>
                         </button>

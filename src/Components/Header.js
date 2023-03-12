@@ -20,7 +20,7 @@ const Header = () => {
             <header className="header">
                 <div className="header-wrapper">
                     <p>
-                        <Link to={"/"} className="header-home-link">
+                        <Link to={"/attendTrack"} className="header-home-link">
                             <Logo />
                         </Link>
                     </p>
@@ -48,7 +48,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     onClick={handleCloseHandburgerMenu}
-                                    to={"/"}
+                                    to={"/attendTrack"}
                                 >
                                     Home
                                 </Link>
@@ -56,7 +56,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     onClick={handleCloseHandburgerMenu}
-                                    to={"/subject/new"}
+                                    to={"/attendTrack/subject/new"}
                                 >
                                     Add subject
                                 </Link>
@@ -64,7 +64,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     onClick={handleCloseHandburgerMenu}
-                                    to={"/about"}
+                                    to={"/attendTrack/about"}
                                 >
                                     About
                                 </Link>

@@ -86,7 +86,7 @@ const NewSubject = () => {
                     >
                         Create Subject
                     </button>
-                    <Link to={"/"}>
+                    <Link to={"/attendTrack"}>
                         <button type="button" className="close-btn border">
                             Back
                         </button>

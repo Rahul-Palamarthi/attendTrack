@@ -77,7 +77,7 @@ const SubjectCard = ({ val, handlePresent, handleAbsent }) => {
         <>
             <div
                 className="subject-card"
-                onClick={() => navigate(`/subject/${val.id}`)}
+                onClick={() => navigate(`/attendTrack/subject/${val.id}`)}
                 style={{
                     backgroundImage: `linear-gradient(to right bottom, ${
                         colors[(val.id - 1) % 14]

@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/attendtrack/static/css/main.03a018c7.css",
-    "main.js": "/attendtrack/static/js/main.6461775a.js",
-    "index.html": "/attendtrack/index.html",
-    "static/media/New.svg": "/attendtrack/static/media/New.234c6da36c6adcee752333ff51842596.svg",
-    "main.03a018c7.css.map": "/attendtrack/static/css/main.03a018c7.css.map",
-    "main.6461775a.js.map": "/attendtrack/static/js/main.6461775a.js.map"
+    "main.css": "/attendTrack/static/css/main.97639ba0.css",
+    "main.js": "/attendTrack/static/js/main.7b9a2403.js",
+    "index.html": "/attendTrack/index.html",
+    "static/media/New.svg": "/attendTrack/static/media/New.234c6da36c6adcee752333ff51842596.svg",
+    "static/media/Logo.svg": "/attendTrack/static/media/Logo.07afe08a9ce8a6572306f78405b661f9.svg",
+    "main.97639ba0.css.map": "/attendTrack/static/css/main.97639ba0.css.map",
+    "main.7b9a2403.js.map": "/attendTrack/static/js/main.7b9a2403.js.map"
   },
   "entrypoints": [
-    "static/css/main.03a018c7.css",
-    "static/js/main.6461775a.js"
+    "static/css/main.97639ba0.css",
+    "static/js/main.7b9a2403.js"
   ]
 }

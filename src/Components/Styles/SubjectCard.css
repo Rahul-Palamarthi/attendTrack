@@ -1,0 +1,104 @@
+.subject-card {
+    color: var(--grey);
+    margin: 10px 0;
+    padding: 1em 1em;
+    border-radius: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    isolation: isolate;
+}
+
+.subject-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 2px 2px 2px 2px;
+    background-color: var(--black-150);
+    border-radius: 0px;
+}
+
+.subject {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.attendence {
+    margin: 6px 0 0;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+}
+
+.attendence span {
+    letter-spacing: 1px;
+    font-family: var(--inter);
+}
+
+.subject-button-wrapper {
+    margin: 10px 0;
+}
+
+.subject-button-wrapper button {
+    font-family: var(--nunito);
+    font-size: 0.8rem;
+    outline: none;
+    padding: 8px 18px;
+    letter-spacing: 0.7px;
+    border-radius: 1px;
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    position: relative;
+    isolation: isolate;
+}
+
+.subject-button-wrapper button::before {
+    content: "";
+    position: absolute;
+    inset: 1px 1px 1px 1px;
+    background-color: var(--black);
+    border-radius: 1px;
+    z-index: -1;
+}
+
+.subject-button-wrapper button:is(:hover, :focus) {
+    cursor: pointer;
+}
+
+.subject-button-wrapper button > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.subject-button-wrapper button svg {
+    transform: scale(0.9);
+}
+
+.present {
+    margin: 0 12px 0 0;
+}
+
+.subject-chart-wrapper {
+    position: relative;
+    top: -7px;
+    margin-left: auto;
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.subject-chart-wrapper::before {
+    content: attr(data-percentage);
+    position: absolute;
+    top: calc(50% + 5px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-family: var(--inter);
+    font-weight: 600;
+}

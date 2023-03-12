@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Styles/Header.css";
+import { ReactComponent as Logo } from "../assets/Images/Logo.svg";
 
 const Header = () => {
     const handburger = useRef();
@@ -20,7 +21,7 @@ const Header = () => {
                 <div className="header-wrapper">
                     <p>
                         <Link to={"/"} className="header-home-link">
-                            At
+                            <Logo />
                         </Link>
                     </p>
                     <div

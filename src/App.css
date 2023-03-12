@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito:wght@400;600;700&family=Tilt+Neon&display=swap");
+
+:root {
+    --black: hsl(0, 0%, 0%);
+    --black-100: hsl(0, 0%, 5%);
+    --black-150: hsl(0, 0%, 12%);
+    --black-200: hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --grey: #ececec;
+    --violet: #a5a1ff;
+    --inter: "Inter";
+    --nunito: "Nunito";
+    --tilt-neon: "Tilt Neon";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+    background-color: var(--black);
+    overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    width: min(100%, 600px);
+    padding: 0 1%;
+    margin-inline: auto;
+    color: var(--grey);
+    background-color: var(--black);
+    font-family: var(--nunito);
 }
 
-.App-link {
-  color: #61dafb;
+#root {
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.offset-1 {
+    position: relative;
+    top: 1px;
 }

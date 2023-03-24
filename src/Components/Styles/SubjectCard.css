@@ -1,22 +1,27 @@
 .subject-card {
-    color: var(--grey);
-    margin: 10px 0;
+    border-radius: 14px;
+    color: var(--black);
+    margin: 16px 0;
     padding: 1em 1em;
-    border-radius: 0px;
+    border: 2px solid var(--black);
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
+    top: 2px;
+    left: 3px;
     isolation: isolate;
+    width: calc(100% - 3px);
 }
 
 .subject-card::before {
     content: "";
     position: absolute;
     z-index: -1;
-    inset: 2px 2px 2px 2px;
-    background-color: var(--black-150);
-    border-radius: 0px;
+    inset: -4px 3px 3px -4px;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 12px;
 }
 
 .subject {
@@ -46,23 +51,17 @@
     font-family: var(--nunito);
     font-size: 0.8rem;
     outline: none;
-    padding: 8px 18px;
+    padding: 6px 16px;
     letter-spacing: 0.7px;
     border-radius: 1px;
-    color: var(--white);
+    color: var(--black);
     font-weight: 700;
-    border: none;
-    position: relative;
-    isolation: isolate;
-}
-
-.subject-button-wrapper button::before {
-    content: "";
-    position: absolute;
-    inset: 1px 1px 1px 1px;
-    background-color: var(--black);
-    border-radius: 1px;
-    z-index: -1;
+    border-top: 2px solid var(--black);
+    border-right: 3px solid var(--black);
+    border-bottom: 3px solid var(--black);
+    border-left: 2px solid var(--black);
+    background-color: var(--white);
+    border-radius: 4px;
 }
 
 .subject-button-wrapper button:is(:hover, :focus) {

@@ -4,7 +4,6 @@ import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Subject from "./Pages/Subject";
 import NewSubject from "./Pages/NewSubject";
-import About from "./Pages/About";
 
 function App() {
     return (
@@ -23,7 +22,6 @@ function App() {
                             element={<Subject />}
                         />
                     </Route>
-                    <Route path="/attendTrack/about" element={<About />} />
                 </Routes>
             </BrowserRouter>
         </>

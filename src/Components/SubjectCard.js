@@ -79,13 +79,18 @@ const SubjectCard = ({ val, handlePresent, handleAbsent }) => {
                 className="subject-card"
                 onClick={() => navigate(`/attendTrack/subject/${val.id}`)}
                 style={{
-                    backgroundImage: `linear-gradient(to right bottom, ${
-                        colors[(val.id - 1) % 14]
-                    }, ${grey})`,
+                    backgroundColor: `${colors[(val.id - 1) % 14]}`,
                 }}
             >
                 <div className="subject-info-wrappper">
-                    <p className="subject">{val.subject}</p>
+                    <p
+                        className="subject"
+                        style={{
+                            color: `${colors[(val.id - 1) % 14]}`,
+                        }}
+                    >
+                        {val.subject}
+                    </p>
                     <p className="attendence">
                         attendence:{" "}
                         <span>
@@ -97,11 +102,6 @@ const SubjectCard = ({ val, handlePresent, handleAbsent }) => {
                             className="present"
                             data-id={val.id}
                             onClick={handleHybridPresent}
-                            style={{
-                                backgroundImage: `linear-gradient(to right bottom, ${
-                                    colors[(val.id - 1) % 14]
-                                }, ${grey})`,
-                            }}
                         >
                             Present
                         </button>
@@ -109,11 +109,6 @@ const SubjectCard = ({ val, handlePresent, handleAbsent }) => {
                             className="absent"
                             data-id={val.id}
                             onClick={handleHybridAbsent}
-                            style={{
-                                backgroundImage: `linear-gradient(to right bottom, ${
-                                    colors[(val.id - 1) % 14]
-                                }, ${grey})`,
-                            }}
                         >
                             Absent
                         </button>

@@ -164,7 +164,17 @@ const Subject = () => {
                     ) : (
                         <>
                             <div className="each-subject-info">
-                                <h2>{subject.subject}</h2>
+                                <h2
+                                    style={{
+                                        color: `${
+                                            colors[
+                                                (subject.id - 1) % colors.length
+                                            ]
+                                        }`,
+                                    }}
+                                >
+                                    {subject.subject}
+                                </h2>
                                 <p className="attendence">
                                     attendence:{" "}
                                     <span>
@@ -189,7 +199,9 @@ const Subject = () => {
                                         data-info={"Present"}
                                         style={{
                                             backgroundColor: `${
-                                                colors[(sub.id - 1) % 14]
+                                                colors[
+                                                    (sub.id - 1) % colors.length
+                                                ]
                                             }`,
                                         }}
                                     ></p>
@@ -211,22 +223,12 @@ const Subject = () => {
                                     <button
                                         className="border"
                                         onClick={handleAttendedClassesDecrement}
-                                        style={{
-                                            backgroundImage: `linear-gradient(to right bottom, ${
-                                                colors[(subject.id - 1) % 14]
-                                            }, ${grey})`,
-                                        }}
                                     >
                                         -
                                     </button>
                                     <button
                                         className="border"
                                         onClick={handleAttendedClassesIncrement}
-                                        style={{
-                                            backgroundImage: `linear-gradient(to right bottom, ${
-                                                colors[(subject.id - 1) % 14]
-                                            }, ${grey})`,
-                                        }}
                                     >
                                         +
                                     </button>
@@ -236,11 +238,6 @@ const Subject = () => {
                                     <button
                                         className="border"
                                         onClick={handleTotalClassesDecrement}
-                                        style={{
-                                            backgroundImage: `linear-gradient(to right bottom, ${
-                                                colors[(subject.id - 1) % 14]
-                                            }, ${grey})`,
-                                        }}
                                     >
                                         -
                                     </button>
@@ -248,62 +245,39 @@ const Subject = () => {
                                     <button
                                         className="border"
                                         onClick={handleTotalClassesIncrement}
-                                        style={{
-                                            backgroundImage: `linear-gradient(to right bottom, ${
-                                                colors[(subject.id - 1) % 14]
-                                            }, ${grey})`,
-                                        }}
                                     >
                                         +
                                     </button>
                                 </div>
                             </div>
-                            <hr />
+                            <hr
+                                style={{
+                                    border: `1.25px solid ${
+                                        colors[(sub.id - 1) % colors.length]
+                                    }`,
+                                }}
+                            />
                             <div className="status-wrapper">
                                 <button
                                     className="border"
                                     onClick={handlePresent}
-                                    style={{
-                                        backgroundImage: `linear-gradient(to right bottom, ${
-                                            colors[(subject.id - 1) % 14]
-                                        }, ${grey})`,
-                                    }}
                                 >
                                     Present
                                 </button>
                                 <button
                                     className="border"
                                     onClick={handleAbsent}
-                                    style={{
-                                        backgroundImage: `linear-gradient(to right bottom, ${
-                                            colors[(subject.id - 1) % 14]
-                                        }, ${grey})`,
-                                    }}
                                 >
                                     Absent
                                 </button>
                             </div>
                             <div className="outro">
                                 <Link to="/attendTrack">
-                                    <button
-                                        className="border"
-                                        style={{
-                                            backgroundImage: `linear-gradient(to right bottom, ${
-                                                colors[(subject.id - 1) % 14]
-                                            }, ${grey})`,
-                                        }}
-                                    >
-                                        Back
-                                    </button>
+                                    <button className="border">Back</button>
                                 </Link>
                                 <button
                                     className="border"
                                     onClick={handleSubjectDelect}
-                                    style={{
-                                        backgroundImage: `linear-gradient(to right bottom, ${
-                                            colors[(subject.id - 1) % 14]
-                                        }, ${grey})`,
-                                    }}
                                 >
                                     Delete Subject
                                 </button>

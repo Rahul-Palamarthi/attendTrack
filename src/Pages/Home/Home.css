@@ -6,7 +6,7 @@
 .new-btn {
     background-color: var(--violet);
     padding: 0.6em 1em;
-    border-radius: 0px;
+    border-radius: 4px;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -30,4 +30,5 @@
 
 .new-btn svg {
     margin: 0 5px 0 0;
+    pointer-events: none;
 }

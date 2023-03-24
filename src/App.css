@@ -21,16 +21,15 @@
 }
 
 html {
-    background-color: var(--black);
+    background-color: var(--white);
     overflow-x: hidden;
 }
 
 body {
-    width: min(100%, 600px);
-    padding: 0 1%;
+    width: min(97%, 600px);
     margin-inline: auto;
-    color: var(--grey);
-    background-color: var(--black);
+    color: var(--black);
+    background-color: var(--white);
     font-family: var(--nunito);
 }
 

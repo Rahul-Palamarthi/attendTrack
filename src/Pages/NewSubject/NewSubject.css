@@ -1,5 +1,5 @@
 .create-subject-wrapper {
-    background-color: var(--black);
+    background-color: var(--white);
     padding: 1em 0;
 }
 
@@ -19,26 +19,17 @@
     position: relative;
     padding: 2px 2px;
     margin: 8px 0;
-    background-image: linear-gradient(
-        to bottom right,
-        var(--violet),
-        var(--black-150)
-    );
-}
-
-.create-subject-wrapper :is(button)::before {
-    content: "";
-    position: absolute;
-    inset: 2px 2px 2px 2px;
-    z-index: -1;
-    background-color: var(--black-150);
 }
 
 .create-subject-wrapper input {
-    color: var(--white);
+    color: var(--black);
     outline: none;
-    border: none;
-    background-color: var(--black-150);
+    border-top: 2px solid var(--black);
+    border-right: 3.5px solid var(--black);
+    border-bottom: 3.5px solid var(--black);
+    border-left: 2px solid var(--black);
+    border-radius: 4px;
+    background-color: var(--white);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -55,7 +46,7 @@ input[type="number"] {
 }
 
 .create-subject-wrapper input::placeholder {
-    color: var(--white);
+    color: var(--black);
     opacity: 1;
     transition: 300ms ease;
 }
@@ -70,18 +61,12 @@ input[type="number"] {
 }
 
 .create-subject-wrapper button {
-    color: var(--white);
-    background-color: var(--white);
     font-weight: 700;
-    border: none;
-    position: relative;
     margin: 8px 0;
-    isolation: isolate;
-    background-image: linear-gradient(
-        to bottom right,
-        var(--violet),
-        var(--black-150)
-    );
+    color: var(--black);
+    background-color: var(--violet);
+    border: 2px solid var(--black);
+    border-radius: 4px;
 }
 
 .create-subject-wrapper button:is(:hover, :focus) {
@@ -90,17 +75,13 @@ input[type="number"] {
 }
 
 .create-subject-wrapper hr {
-    background-image: linear-gradient(
-        to bottom right,
-        var(--violet),
-        var(--black-150)
-    );
-    height: 3px;
+    height: 2px;
     border: none;
     margin: 16px 0;
     outline: none;
+    background-color: var(--black);
 }
 
 .create-subject-wrapper .close-btn {
-    color: var(--white);
+    color: var(--black);
 }

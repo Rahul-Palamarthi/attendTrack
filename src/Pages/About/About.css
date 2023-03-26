@@ -11,19 +11,17 @@
 }
 
 .about-links-wrapper {
-    margin-top: 210px;
+    margin-top: 150px;
     margin-left: 10px;
 }
 
 .about a {
     text-transform: uppercase;
     letter-spacing: 0.7px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     display: inline-block;
-    transform: rotate(-41deg);
-    transform-origin: left center;
     position: relative;
-    transition: 300ms ease;
+    font-weight: 600;
 }
 
 .about a::before {

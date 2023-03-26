@@ -21,7 +21,10 @@ const About = () => {
                             <a href="mailto:rahulpalamarthi@gmail.com">gmail</a>
                         </li>
                         <li>
-                            <Link to={"https://github.com/Rahul-Palamarthi"}>
+                            <Link
+                                to={"https://github.com/Rahul-Palamarthi"}
+                                target="_blank"
+                            >
                                 github
                             </Link>
                         </li>
@@ -30,6 +33,7 @@ const About = () => {
                                 to={
                                     "https://www.linkedin.com/in/rahul-palamarthi/"
                                 }
+                                target="_blank"
                             >
                                 linkedin
                             </Link>
@@ -39,6 +43,7 @@ const About = () => {
                                 to={
                                     "https://rahul-palamarthi.github.io/Web-Portfolio/"
                                 }
+                                target="_blank"
                             >
                                 portfolo
                             </Link>

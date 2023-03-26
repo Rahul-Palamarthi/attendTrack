@@ -11,6 +11,7 @@ const Header = () => {
                             At
                         </Link>
                     </p>
+                    <Link to={"/attendTrack/about"}>About</Link>
                 </div>
             </header>
         </>
